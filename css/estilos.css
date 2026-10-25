@@ -1,7 +1,9 @@
+/*Solución: Contraste*/
 :root {
     --color-fondo: #f4f1ea;
     --color-texto: #1a1a1a;
-    --color-primario: #d35400;
+    --color-primario: #c04000;
+    --color-texto-boton: #ffffff;
     --color-secundario: #2c3e50;
     --color-fondo-cajas: #ffffff;
     --color-bordes: #cccccc;
@@ -11,7 +13,8 @@
     :root {
         --color-fondo: #121212;
         --color-texto: #e0e0e0;
-        --color-primario: #e67e22;
+        --color-primario: #ff8c42;
+        --color-texto-boton: #121212;
         --color-secundario: #1a1a1a;
         --color-fondo-cajas: #1e1e1e;
         --color-bordes: #333333;
@@ -180,9 +183,10 @@ button {
     font-family: inherit;
 }
 
+/*Actualizado para usar variable*/
 button {
     background-color: var(--color-primario);
-    color: #ffffff;
+    color: var(--color-texto-boton);
     border: none;
     font-size: 1.1rem;
     font-weight: bold;
